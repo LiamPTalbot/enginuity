@@ -1,5 +1,5 @@
-import { Dashboard } from "./pages/dashboard";
-import { BrowserRouter, Route, Routes} from "react-router-dom"
+import { Dashboard } from './pages/dashboard.jsx'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 
 export function App() {
   return (

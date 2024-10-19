@@ -1,4 +1,4 @@
-import 'enginuity/frontend/src/pages/dashboard.css'
+import '../../pages/dashboard.css'
 
 export function Wrapper ({ children }) {
     return (
