@@ -23,7 +23,28 @@
 }
 
 .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.25rem;
   background-color: var(--color-nav);
+}
+
+.nav-titles {
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  color: white;
+}
+
+.nav-titles h4 {
+  padding-bottom: 0.25rem;;
+}
+
+.nav-logos {
+  display: flex;
+  gap: 1rem; 
+  margin-left: auto; 
 }
 
 .footer {
@@ -50,4 +71,8 @@
   margin: 0.25rem;
   border-radius: 0.25rem;
   background-color: var(--color-body);
+}
+
+h1 {
+  color: white;
 }
