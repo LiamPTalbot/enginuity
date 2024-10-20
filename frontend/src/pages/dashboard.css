@@ -71,10 +71,18 @@
 }
 
 .table {
+  display: flex;
+  flex-direction: column;
   flex: 30;
   margin: 0.25rem;
   border-radius: 0.25rem;
   background-color: var(--color-body);
+}
+
+.tabNav {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 100rem;
 }
 
 h1 {

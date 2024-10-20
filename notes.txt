@@ -1,0 +1,15 @@
+What do I want the output to be?
+
+
+A BIG picture of the engines on that ship with RAG status on each fuel pump.
+Table below it with
+
+|  Ship  | Engine Name | EngineID | Component Name | ComponentID | TTF | 
+
+
+Time-series of Failures
+overlaid with 
+Time-series of Stock levels
+
+You always want to keep the Failure line below the stock level line
+
