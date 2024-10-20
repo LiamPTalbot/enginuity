@@ -1,3 +1,9 @@
+:root {
+  --color-background: #f8fafc;
+  --color-nav: #233745;
+  --color-body: #12202b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +19,15 @@
   max-height: 100vh;
   width: 100%;
   justify-content: space-between;
-  background-color: pink;
+  background-color: var(--color-background);
+}
+
+.nav {
+  background-color: var(--color-nav);
+}
+
+.footer {
+  background-color: var(--color-nav);
 }
 
 .body {
@@ -26,8 +40,14 @@
 
 .sidebar {
   flex: 1;
+  margin: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-body);
 }
 
 .table {
   flex: 30;
+  margin: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-body);
 }
