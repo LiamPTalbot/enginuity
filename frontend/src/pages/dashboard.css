@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-family: "Inter", sans-serif;
 }
 
@@ -26,15 +26,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.25rem;
+  padding: 1rem;
   background-color: var(--color-nav);
 }
 
 .nav-titles {
   display: flex;
   align-items: end;
-  gap: 0.5rem;
-  color: white;
+  gap: 1rem;
+  color: var(--color-background); 
 }
 
 .nav-titles h4 {
@@ -43,8 +43,12 @@
 
 .nav-logos {
   display: flex;
-  gap: 1rem; 
-  margin-left: auto; 
+  gap: 1.25rem;
+  padding-right: 1rem;
+  font-size: 1.25rem; 
+  margin-left: auto;
+  align-items: center;
+  color: var(--color-background); 
 }
 
 .footer {
