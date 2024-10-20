@@ -11,5 +11,23 @@
   flex-direction: column;
   min-height: 100vh;
   max-height: 100vh;
+  width: 100%;
+  justify-content: space-between;
   background-color: pink;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.table {
+  flex: 30;
 }
