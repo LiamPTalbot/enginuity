@@ -85,20 +85,6 @@
   border-radius: 100rem;
 }
 
-.personalDetails {
-  display: flex;
-  gap: 5rem;
-}
-
-.personalDetails Field {
-  flex: 1 !important;
-}
-
-.personalDetails TextInput {
-  width: 100% !important;
-}
-
-
 h1 {
   color: white;
 }
