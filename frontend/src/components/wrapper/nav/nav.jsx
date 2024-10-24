@@ -6,7 +6,7 @@ export function Nav() {
     return (
         <div className='nav'>
             <div className="nav-titles">
-                <h1>engine Ai</h1>
+                <h1>engineAi</h1>
                 <h4>- using Machine Learning to provide predictive capabilities and an intelligent supply chain</h4>
             </div>
             <div className="nav-logos">

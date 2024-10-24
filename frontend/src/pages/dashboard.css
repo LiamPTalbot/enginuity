@@ -77,6 +77,8 @@
   margin: 0.25rem;
   border-radius: 0.25rem;
   background-color: var(--color-body);
+  padding: 1rem; /* Add padding for a cleaner look */
+  justify-content: space-between; /* Ensure the content is spaced evenly */
 }
 
 .tabNav {

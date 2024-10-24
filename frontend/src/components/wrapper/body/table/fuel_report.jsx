@@ -26,24 +26,32 @@ export function FuelReport() {
                 </Fieldset>
                 <Fieldset legend="Results">
                     <Field>
-                    <TextInput label="Name" name="name"/>
+                    <TextInput label="Density (kg/m3)" name="density"/>
                     </Field>
                     <Field>
-                    <TextInput label="Email Address" name="email"/>
+                    <TextInput label="Water Reaction Vol Change (ml)" name="waterReaction"/>
                     </Field>
                     <Field>
-                    <TextInput label="Ship" name="ship" />
+                    <TextInput label="Flash Point (celsius)" name="flashPoint" />
                     </Field>
                 </Fieldset>
                 <Fieldset>
                     <Field>
-                    <TextInput label="Engine" name="engine"/>
+                    <TextInput label="Filter Blocking Tendency" name="filterBlockingTendency"/>
                     </Field>
                     <Field>
-                    <TextInput label="Engine ID" name="engineID"/>
+                    <TextInput label="Cloud Point (celsius)" name="cloudPoint"/>
                     </Field>
                     <Field>
-                    <TextInput label="Fuel Feed" name="fuelFeed"/>
+                    <TextInput label="Sulphur (%)" name="sulphur"/>
+                    </Field>
+                </Fieldset>
+                <Fieldset>
+                    <Field>
+                    <TextInput label="Colony Forming Units (CFU/ml)" name="colonyFormingUnits"/>
+                    </Field>
+                    <Field>
+                    <TextInput label="Water content (mg/kg)" name="waterContent"/>
                     </Field>
                 </Fieldset>
                 <SectionDivider />
@@ -54,5 +62,5 @@ export function FuelReport() {
 }
 
 
-// Need to input the results data
+							
 
