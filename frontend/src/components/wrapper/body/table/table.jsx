@@ -1,4 +1,5 @@
 import React from "react";
+import { InputForm } from "./input_form";
 import '@royalnavy/fonts';
 import { TabSet, TabSetItem } from '@royalnavy/react-component-library'; 
 
@@ -8,9 +9,7 @@ export function Table() {
             <div className='tabNav'>
                 <TabSet isFullWidth>
                     <TabSetItem title="Input">
-                        <p>
-                            Example tab 1 content
-                        </p>
+                        <InputForm/>
                     </TabSetItem>
                     <TabSetItem title="Output">
                         <p>
