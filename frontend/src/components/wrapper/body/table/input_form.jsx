@@ -7,26 +7,26 @@ export function InputForm() {
             <SectionDivider title="Failure Report">
             Please provide details of the failure below.
             </SectionDivider>
-            <Fieldset legend="Personal Details">
-            <Field>
-                <TextInput
-                label="First name"
-                name="firstName"
-                />
-            </Field>
-            <Field>
-                <TextInput
-                label="Last name"
-                name="lastName"
-                />
-            </Field>
-            <Field>
-                <TextInput
-                label="Email address"
-                name="emailAddress"
-                />
-            </Field>
-            </Fieldset>
+            <div className="personalDetails">
+                <Field>
+                    <TextInput
+                        label="First name"
+                        name="firstName"
+                    />
+                </Field>
+                <Field>
+                    <TextInput
+                        label="Last name"
+                        name="lastName"
+                    />
+                </Field>
+                <Field>
+                    <TextInput
+                        label="Email address"
+                        name="emailAddress"
+                    />
+                </Field>
+            </div>
         </div>
     )
 }
