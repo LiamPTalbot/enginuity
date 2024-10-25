@@ -70,21 +70,15 @@
   background-color: var(--color-body);
 }
 
-.table {
+.tabNav {
   display: flex;
   flex-direction: column;
-  flex: 30;
+  flex: 6;
   margin: 0.25rem;
   border-radius: 0.25rem;
   background-color: var(--color-body);
-  padding: 1rem; /* Add padding for a cleaner look */
-  justify-content: space-between; /* Ensure the content is spaced evenly */
-}
-
-.tabNav {
-  flex: 1;
-  padding: 0.5rem;
-  border-radius: 100rem;
+  padding: 1rem;
+  justify-content: space-between;
 }
 
 h1 {
