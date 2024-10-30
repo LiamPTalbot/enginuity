@@ -1,7 +1,7 @@
-export function Sidebar() {
+export function Sidebar({title}) {
     return (
         <div className='sidebar'>
-            <h1>Sidebar Component</h1>
+            <h1>{title}</h1>
         </div>
     )
 }
