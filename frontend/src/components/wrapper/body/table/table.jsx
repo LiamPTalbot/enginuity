@@ -8,7 +8,6 @@ import { TabSet, TabSetItem } from '@royalnavy/react-component-library';
 export function Table({ setSidebarTitle }) {
 
     const handleTabChange = (title) => {
-        console.log("Tab selected:", title); // Check the selected tab’s title
         if (title === "Failure Report Input") {
             setSidebarTitle("Add Failure Report");
         } else if (title === "Fuel Report Input") {
@@ -18,12 +17,13 @@ export function Table({ setSidebarTitle }) {
         }
     };
 
+    
     return (
         <div className='tabNav'>
             <TabSet 
                 isFullWidth 
                 className="tabSetContainer"
-                onChange={(event) => handleTabChange(event.target.textContent)} // Adjusted for text content
+                onChange={ e => handleTabChange(e.target.textContent)}
             >
                 <TabSetItem title="Failure Report Input">
                     <FailureReport />
