@@ -1,14 +1,14 @@
-import { Wrapper } from '../components/wrapper/wrapper.jsx';
-import { Nav } from '../components/wrapper/nav/nav.jsx';
-import { Body } from '../components/wrapper/body/body.jsx';
-import { Footer } from '../components/wrapper/footer/footer.jsx';
+import { Nav } from '../components/nav/nav.jsx';
+import { Body } from '../components/body/body.jsx';
+import { Footer } from '../components/footer/footer.jsx';
+import '../pages/dashboard.css';
 
 export function Dashboard() {
     return (
-        <Wrapper>
+        <div className='wrapper'>
             <Nav />
             <Body />
             <Footer />
-        </Wrapper>
+        </div>
     );
 }
