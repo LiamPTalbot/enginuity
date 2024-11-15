@@ -1,18 +1,33 @@
-import React, { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { UserContext } from "@/pages/dashboard.jsx";
 import { Button, DatePicker, Field, Fieldset, SectionDivider, TextInput } from "@royalnavy/react-component-library";
 
 export function FailureReport() {
+
+    const user = useContext(UserContext);
+
     const [formData, setFormData] = useState({
-        name: "",
-        email: "",
+        name: user.name || "",
+        email: user.email || "",
         ship: "",
         engine: "",
         engineID: "",
         fuelFeed: "",
         fuelPumpID: "",
         ttf: "",
-        dateOfFailure: null // Initialize as null for validation
+        dateOfFailure: null // Initialise as null for validation
     });
+
+    // Populate formData when user becomes available
+    useEffect(() => {
+        if (user) {
+            setFormData((prevState) => ({
+                ...prevState,
+                name: user.name || "",
+                email: user.email || "",
+            }));
+        }
+    }, [user]); // Runs whenever `user` changes
 
     const [isSubmitEnabled, setIsSubmitEnabled] = useState(false);
 
@@ -41,39 +56,35 @@ export function FailureReport() {
             <>
                 <Fieldset legend="Personal details">
                     <Field>
-                        <TextInput label="Name" name="name" onChange={handleInputChange} />
+                        <TextInput label="Name" name="name" value={formData.name} onChange={handleInputChange} />
                     </Field>
                     <Field>
-                        <TextInput label="Email Address" name="email" onChange={handleInputChange} />
+                        <TextInput label="Email Address" name="email" value={formData.email} onChange={handleInputChange} />
                     </Field>
                     <Field>
-                        <TextInput label="Ship" name="ship" onChange={handleInputChange} />
+                        <TextInput label="Ship" name="ship" value={formData.ship} onChange={handleInputChange} />
                     </Field>
                 </Fieldset>
                 <Fieldset legend="Engine Details">
                     <Field>
-                        <TextInput label="Engine" name="engine" onChange={handleInputChange} />
+                        <TextInput label="Engine" name="engine" value={formData.engine} onChange={handleInputChange} />
                     </Field>
                     <Field>
-                        <TextInput label="Engine ID" name="engineID" onChange={handleInputChange} />
+                        <TextInput label="Engine ID" name="engineID" value={formData.engineID} onChange={handleInputChange} />
                     </Field>
                     <Field>
-                        <TextInput label="Fuel Feed" name="fuelFeed" onChange={handleInputChange} />
+                        <TextInput label="Fuel Feed" name="fuelFeed" value={formData.fuelFeed} onChange={handleInputChange} />
                     </Field>
                 </Fieldset>
                 <Fieldset legend="Fuel Pump Details">
                     <Field>
-                        <TextInput label="Fuel Pump ID" name="fuelPumpID" onChange={handleInputChange} />
+                        <TextInput label="Fuel Pump ID" name="fuelPumpID" value={formData.fuelPumpID} onChange={handleInputChange} />
                     </Field>
                     <Field>
-                        <TextInput label="Time Til Failure" name="ttf" onChange={handleInputChange} />
+                        <TextInput label="Time Til Failure" name="ttf" value={formData.ttf} onChange={handleInputChange} />
                     </Field>
                     <Field>
-                        <DatePicker
-                            label="Date of Failure"
-                            name="dateOfFailure"
-                            onChange={handleDateChange} // Handle date change with a function
-                        />
+                        <DatePicker label="Date of Failure" name="dateOfFailure" value={formData.dateOfFailure} onChange={handleDateChange} />
                     </Field>
                 </Fieldset>
                 <SectionDivider />
