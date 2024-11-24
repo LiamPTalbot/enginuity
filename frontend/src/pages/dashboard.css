@@ -58,7 +58,9 @@
 
 .nav-logos a:hover {
   color: #ccc;
-}
+  opacity: 50%;
+  transition-duration: 200ms;
+  }
 
 .nav-logos a:visited {
   color: var(--color-background);
