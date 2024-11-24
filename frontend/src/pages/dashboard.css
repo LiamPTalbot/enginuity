@@ -51,6 +51,19 @@
   color: var(--color-background); 
 }
 
+.nav-logos a {
+  text-decoration: none;
+  color: var(--color-background);
+}
+
+.nav-logos a:hover {
+  color: #ccc;
+}
+
+.nav-logos a:visited {
+  color: var(--color-background);
+}
+
 .footer {
   background-color: var(--color-nav);
 }
